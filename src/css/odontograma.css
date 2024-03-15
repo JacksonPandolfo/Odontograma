@@ -1,0 +1,369 @@
+body {
+  background-color: darkslateblue;
+}
+
+.container {
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+/* ######## BOTÕES DE SELEÇÃO ######## */
+
+.group-radio--container {
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(242 244 247 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.3rem;
+}
+/* ######## MODAL ODONTOGRAMA ######## */
+.modal-body {
+  background-color: white;
+  padding: 0px 8px 0px 8px;
+  border-radius: 5%;
+  border-color: black;
+  border-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+}
+
+.modal-body h4 {
+  text-align: center;
+}
+.modal-body .mb-3 {
+  position: relative;
+  display: flex;
+}
+
+.close-modal-dente-odontograma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 1rem;
+  background-color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 20px;
+}
+.form-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+.form-check-label,
+.form-check-input {
+  cursor: pointer;
+}
+
+.form-group {
+  width: auto;
+}
+
+.save-modal-dentes-odontograma {
+  width: 8rem;
+  background-color: #5e6cee;
+  transition: 0.7s;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ######## ODONTOGRAMA ######## */
+
+.odontogramaPermanenteDeciduo {
+  display: flex;
+  position: relative;
+  line-height: 40px;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.odontograma {
+  max-width: 1000px;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.dentes::-webkit-scrollbar {
+  width: auto;
+  height: 10px;
+}
+
+.dentes::-webkit-scrollbar-thumb {
+  background-color: #4d4d4d; /* Cor da alça da barra de rolagem */
+  border-radius: 20px; /* Borda arredondada da alça */
+}
+
+.dentes::-webkit-scrollbar-track {
+  background-color: #adadad; /* Cor do fundo da barra de rolagem */
+  border-radius: 20px;
+}
+.dentes {
+  margin-bottom: 2px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.odontograma-dentes-superiores {
+  width: max-content;
+  position: relative;
+  left: 0px;
+}
+.odontograma-dentes-inferiores {
+  width: max-content;
+  position: relative;
+  left: 0px;
+}
+
+.odontograma-dentes-superiores {
+  border-bottom: dashed 1px #c5c5c5;
+}
+
+.odontograma-dentes-inferiores {
+  margin-top: 0;
+}
+
+.dente-odontograma {
+  display: inline-block;
+}
+
+.imagem-dente-odontograma {
+  position: relative;
+  background: url("/soulclinic/src/assets/odontograma.png");
+  background-repeat: no-repeat;
+  height: 85px;
+  cursor: pointer;
+}
+
+.odontogram-number {
+  text-align: center;
+}
+.odontograma-dentes-superiores .odontogram-number {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.odontograma-dentes-inferiores .odontogram-number {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.alert {
+  padding: 0px 0px 0px 6px;
+}
+.alert-dismissible .btn-close {
+  padding: 0px;
+  margin-top: 12px;
+  margin-right: 6px;
+  width: 10px;
+}
+
+/* ################# CARROSSEL ################### */
+.carousel-control-next,
+.carousel-control-prev {
+  height: min-content;
+}
+.carousel-item p {
+  text-align: center;
+  padding: 0px 35px 0px 35px;
+  line-height: 1.5;
+}
+.carousel-item h6 {
+  text-align: center;
+}
+.carousel {
+  border: 1px solid;
+  border-color: #dee2e6;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+/* ######## POSIÇÃO DE CADA DENTE NA PÁGINA ######## */
+
+.imagem-dente-odontograma-18 {
+  width: 26px;
+  background-position: 0 0;
+  margin-left: 7px;
+  /* filter: blur(3px); */
+}
+.imagem-dente-odontograma-17,
+.imagem-dente-odontograma-55 {
+  width: 31px;
+  background-position: -27px 0;
+}
+.imagem-dente-odontograma-16,
+.imagem-dente-odontograma-54 {
+  width: 31px;
+  background-position: -59px 0;
+}
+.imagem-dente-odontograma-15 {
+  width: 24px;
+  background-position: -91px 0;
+}
+.imagem-dente-odontograma-14 {
+  width: 26px;
+  background-position: -117px 0;
+}
+.imagem-dente-odontograma-13,
+.imagem-dente-odontograma-53 {
+  width: 29px;
+  background-position: -145px 0;
+}
+.imagem-dente-odontograma-12,
+.imagem-dente-odontograma-52 {
+  width: 22px;
+  background-position: -177px 0;
+}
+.imagem-dente-odontograma-11,
+.imagem-dente-odontograma-51 {
+  width: 29px;
+  background-position: -203px 0;
+}
+.imagem-dente-odontograma-21,
+.imagem-dente-odontograma-61 {
+  width: 29px;
+  background-position: -239px 0;
+  margin-left: 6px;
+}
+.imagem-dente-odontograma-22,
+.imagem-dente-odontograma-62 {
+  width: 21px;
+  background-position: -272px 0;
+}
+.imagem-dente-odontograma-23,
+.imagem-dente-odontograma-63 {
+  width: 28px;
+  background-position: -297px 0;
+}
+.imagem-dente-odontograma-24 {
+  width: 26px;
+  background-position: -328px 0;
+}
+.imagem-dente-odontograma-25 {
+  width: 24px;
+  background-position: -356px 0;
+}
+.imagem-dente-odontograma-26,
+.imagem-dente-odontograma-64 {
+  width: 31px;
+  background-position: -381px 0;
+}
+.imagem-dente-odontograma-27,
+.imagem-dente-odontograma-65 {
+  width: 31px;
+  background-position: -413px 0;
+}
+.imagem-dente-odontograma-28 {
+  width: 26px;
+  background-position: -445px 0;
+}
+.imagem-dente-odontograma-48 {
+  width: 35px;
+  height: 57px;
+  background-position: 0 -86px;
+}
+.imagem-dente-odontograma-47,
+.imagem-dente-odontograma-85 {
+  width: 35px;
+  height: 61px;
+  background-position: -35px -86px;
+}
+.imagem-dente-odontograma-46,
+.imagem-dente-odontograma-84 {
+  width: 34px;
+  height: 68px;
+  background-position: -72px -86px;
+}
+.imagem-dente-odontograma-45 {
+  width: 27px;
+  height: 72px;
+  background-position: -107px -86px;
+}
+.imagem-dente-odontograma-44 {
+  width: 25px;
+  height: 73px;
+  background-position: -136px -86px;
+}
+.imagem-dente-odontograma-43,
+.imagem-dente-odontograma-83 {
+  width: 26px;
+  height: 81px;
+  background-position: -167px -86px;
+}
+.imagem-dente-odontograma-42,
+.imagem-dente-odontograma-82 {
+  width: 21px;
+  height: 79px;
+  background-position: -198px -86px;
+}
+.imagem-dente-odontograma-41,
+.imagem-dente-odontograma-81 {
+  width: 21px;
+  height: 71px;
+  background-position: -223px -86px;
+}
+.imagem-dente-odontograma-31,
+.imagem-dente-odontograma-71 {
+  width: 21px;
+  height: 71px;
+  background-position: -253px -86px;
+  margin-left: 6px;
+}
+.imagem-dente-odontograma-32,
+.imagem-dente-odontograma-72 {
+  width: 21px;
+  height: 79px;
+  background-position: -278px -86px;
+}
+.imagem-dente-odontograma-33,
+.imagem-dente-odontograma-73 {
+  width: 26px;
+  height: 81px;
+  background-position: -304px -86px;
+}
+.imagem-dente-odontograma-34 {
+  width: 26px;
+  height: 72px;
+  background-position: -335px -86px;
+}
+.imagem-dente-odontograma-35 {
+  width: 27px;
+  height: 72px;
+  background-position: -363px -86px;
+}
+.imagem-dente-odontograma-36,
+.imagem-dente-odontograma-74 {
+  width: 34px;
+  height: 69px;
+  background-position: -391px -86px;
+}
+.imagem-dente-odontograma-37,
+.imagem-dente-odontograma-75 {
+  width: 35px;
+  height: 62px;
+  background-position: -425px -86px;
+}
+.imagem-dente-odontograma-38 {
+  width: 35px;
+  height: 54px;
+  background-position: -461px -86px;
+}
