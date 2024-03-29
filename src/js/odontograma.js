@@ -34,6 +34,7 @@ $(document).ready(function () {
   var ano = dataAtual.getFullYear()
   var hora = String(dataAtual.getHours() + dataAtual.getMinutes())
   var dataFormatada = ano + "-" + mes + "-" + dia + "-" + hora
+
   $("#carrosselProcedimentos").carousel({
     interval: false
   })
@@ -196,15 +197,6 @@ function getInfoProcedimentoDente(toothNumber) {
   })
 }
 
-$(".carousel-control-prev").on("click", function () {
-  carouselHeigth = $(".carousel").height()
-  $(this).css({
-    top: calc(carouselHeigth / 2)
-  })
-})
-$(".carousel-control-next").on("click", function () {
-  carouselHeigth = $(".carousel").height()
-})
 // ##### ADICIONA O MODAL DE CADA DENTE AO CLICAR NELES
 $("div.dente-odontograma > div.imagem-dente-odontograma").click(function () {
   var toothNumber = $(this).attr("id")

@@ -30,11 +30,12 @@ body {
   background-color: white;
   padding: 0px 8px 0px 8px;
   border-radius: 5%;
-  border-color: black;
-  border-width: 20rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   width: 18rem;
+  height: 100%;
+  margin-right: 1rem;
 }
 
 .modal-body h4 {
@@ -71,6 +72,8 @@ body {
 
 .form-group {
   width: auto;
+  position: relative;
+  align-content: flex-end;
 }
 
 .save-modal-dentes-odontograma {
@@ -88,7 +91,6 @@ body {
   position: relative;
   line-height: 40px;
   justify-content: center;
-  gap: 2rem;
 }
 
 .odontograma {
@@ -179,13 +181,22 @@ body {
 }
 
 /* ################# CARROSSEL ################### */
-.carousel-control-next,
-.carousel-control-prev {
-  height: min-content;
+.carousel-item.active {
+  scrollbar-width: thin;
+  scrollbar-gutter: stable both-edges;
+  height: 70px;
+  overflow-y: scroll;
+}
+
+.carousel-inner .carousel-item.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .carousel-item p {
   text-align: center;
   padding: 0px 35px 0px 35px;
+  margin-bottom: 0;
   line-height: 1.5;
 }
 .carousel-item h6 {
@@ -197,6 +208,7 @@ body {
   border-radius: 6px;
   margin-bottom: 8px;
 }
+
 /* ######## POSIÇÃO DE CADA DENTE NA PÁGINA ######## */
 
 .imagem-dente-odontograma-18 {
